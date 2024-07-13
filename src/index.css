@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  @apply bg-neutral-900 text-neutral-300
+}
+
+.active {
+  @apply text-neutral-100
+}
+
+.bannerSwiper.swiper-button-prev,
+.bannerSwiper.swiper-button-next {
+
+
+}
+
+.bannerSwiper .swiper-button-prev::after,
+.bannerSwiper .swiper-button-next::after {
+ 
+  @apply text-2xl lg:text-4xl font-extrabold text-neutral-200 hover:text-neutral-50 hidden
+  
+}
+
+.bannerSwiper:hover .swiper-button-prev::after,
+.bannerSwiper:hover .swiper-button-next::after {
+  @apply block
+}
+
+
+
+.cardSwiper .swiper-button-prev,
+.cardSwiper .swiper-button-next {
+
+@apply w-7 h-7 bg-white p-2  rounded-full
+
+}
+
+.cardSwiper .swiper-button-prev{
+  @apply -ml-2
+}
+
+.cardSwiper .swiper-button-next {
+  @apply -mr-2
+}
+
+.cardSwiper .swiper-button-prev::after
+ {
+ 
+@apply text-xl font-bold text-black
+  
+}
+
+.cardSwiper  .swiper-button-next::after{
+  @apply text-xl font-bold text-black
+  
+}
+
