@@ -200,7 +200,7 @@ const DetailPage = () => {
                 </div>
 
                 <div className=' w-full flex items-center gap-2 lg:gap-4 py-2 pt-0 border-b border-neutral-600 my-2 flex-wrap text-sm md:text-base'>
-                  <p>Budget: ${+deatilData?.budget..toLocaleString()}</p>
+                  <p>Budget: ${+deatilData?.budget.toLocaleString()}</p>
                   |
                   <p>Revenue : ${+deatilData?.revenue.toLocaleString()}</p>
                 </div>
