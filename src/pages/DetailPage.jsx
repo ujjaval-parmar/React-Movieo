@@ -155,7 +155,7 @@ const DetailPage = () => {
             <div className='-mt-8 lg:-mt-28 relative min'>
               <img src={imageBaseUrl + 'w342' + deatilData?.poster_path} alt={deatilData?.title || deatilData?.name} className=' min-w-60 h-80  object-cover rounded mx-auto md:mx-0' />
 
-              <div className='w-full max-w-60 bg-white px-3 py-2 text-black font-bold rounded mt-4 hover:bg-gradient-to-l from-red-700 to-orange-500 hover:scale-105 shadow-md transition-all duration-500 block mb-2 text-center mx-auto sm:mx-0' onClick={() => {
+              <div className='w-full max-w-60 bg-white px-3 py-2 text-black font-bold rounded mt-4 hover:bg-gradient-to-l from-red-700 to-orange-500 hover:scale-105 shadow-md transition-all duration-500 block mb-2 text-center mx-auto md:mx-0' onClick={() => {
                 setPlayVideoId(deatilData.id);
                 setPlay(true);
               }}>
